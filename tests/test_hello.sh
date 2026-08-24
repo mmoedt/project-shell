@@ -4,7 +4,8 @@
 
 set -uo pipefail
 
-readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+readonly SCRIPT_DIR
 readonly HELLO="${SCRIPT_DIR}/../src/hello.sh"
 
 PASS_COUNT=0
