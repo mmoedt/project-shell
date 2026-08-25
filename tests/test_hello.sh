@@ -6,7 +6,8 @@ set -uo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 readonly SCRIPT_DIR
-readonly HELLO="${SCRIPT_DIR}/../src/hello.sh"
+HELLO="${SCRIPT_DIR}/../src/hello.sh"
+readonly HELLO
 
 PASS_COUNT=0
 FAIL_COUNT=0
